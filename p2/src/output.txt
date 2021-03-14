@@ -1,0 +1,208 @@
+
+- - - LinearList - - - Initialized new LinearList<Integer> list1 - - -
+First: null Last: null Size: 0
+ basic add and remove first and last  
+
+addFirst(2)
+First: 2 Last: 2 Size: 1
+removeFirst()
+First: null Last: null Size: 0
+addLast(3)
+First: 3 Last: 3 Size: 1
+removeLast()
+First: null Last: null Size: 0
+
+ multiple removeLast() calls 
+
+addLast(i) 10 items via for loop...
+First: 1 Last: 10 Size: 10
+removeLast()
+First: 1 Last: 9 Size: 9
+removeLast() 9 more times...
+First: null Last: null Size: 0
+
+ addFirst(), then removeFirst() all of the elements 
+
+addFirst(i) 10 items via for loop...
+First: 10 Last: 1 Size: 10
+removeFirst() 10 items via for loop...
+First: null Last: null Size: 0
+
+ addFirst(), then removeLast() all of the elements 
+
+addFirst(i) 10 items via for loop...
+First: 10 Last: 1 Size: 10
+removeLast() 10 items via for loop...
+First: null Last: null Size: 0
+
+ addLast(), then removeFirst() all of the elements 
+
+addLast(i) 10 items via for loop...
+First: 1 Last: 10 Size: 10
+removeFirst() 10 items via for loop...
+First: null Last: null Size: 0
+
+ contains() test 
+
+addFirst(i) 10 items via for loop...
+Does the list contain: 0 false
+Does the list contain: 1 true
+Does the list contain: 2 true
+Does the list contain: 3 true
+Does the list contain: 4 true
+Does the list contain: 5 true
+Does the list contain: 6 true
+Does the list contain: 7 true
+Does the list contain: 8 true
+Does the list contain: 9 true
+Does the list contain: 10 true
+Does the list contain: 11 false
+
+ remove() but of the head and tail elements 
+
+First: 10 Last: 1 Size: 10
+remove(10) 'the head of the list'...
+First: 9 Last: 1 Size: 9
+remove(1) 'the tail of the list'...
+First: 9 Last: 2 Size: 8
+
+ remove duplicate item 
+
+addFirst(1)...
+addLast(1)...
+First: 1 Last: 1 Size: 2
+remove(1) 'the head of the list'...
+First: 1 Last: 1 Size: 1
+remove(1) 'the tail and head of the list'...
+First: null Last: null Size: 0
+
+ remove() in middle 
+
+addLast(i) 10 items via for loop...
+remove(6) 'an item in the middle'...
+First: 1 Last: 10 Size: 9
+Printing the entire list...
+1 2 3 4 5 7 8 9 10 
+remove(i) from 1 to 4 items via for loop...
+First: 5 Last: 10 Size: 5
+Printing the entire list...
+5 7 8 9 10 
+
+ decent amount of additions and removals 
+
+addFirst(i) 10000 items via for loop...
+First: 1 Last: 10000 Size: 10000
+remove(i) all 10000 items via for loop...
+First: null Last: null Size: 0
+
+ many items, awkward remove placement 
+
+addLast(i) 1,000,000 items via for loop...
+First: 1 Last: 1000000 Size: 1000000
+remove(i) from 47,000 to 47,028 items via for loop...
+First: 1 Last: 1000000 Size: 999972
+
+ single element 
+
+addFirst(10)...
+First: 10 Last: 10 Size: 1
+removeFirst()
+First: null Last: null Size: 0
+addLast(10)...
+First: 10 Last: 10 Size: 1
+removeLast()
+First: null Last: null Size: 0
+
+ contains() and find() test with many elements 
+
+addFirst(i) 1,000,000 items via for loop...
+contains(700060)...
+The list contains the value 700,060? true
+find(800000)...
+800000
+find(1000001)...
+null
+
++ + +
+
+- - - Stack - - - Initialized new Stack<Integer> stack1 - - -
+
+ basic push(1), then loops and removes and isEmpty()  
+
+The stack's empty? true
+Pushing 1 to the Stack...
+Is it empty? false
+Adding 700 items to the stack via for loop...
+Stack size: 700 stack peek: 700
+Removing 10 to 700 via for loop...
+Printing all the stack elements...
+9 8 7 6 5 4 3 2 1 
+Removing 4 to 6 via for loop...
+Printing all the stack elements...
+9 8 7 3 2 1 
+
+ pushing multiple items, then taking a look at the stack 
+
+push(i) 10 times via for loop...
+Stack's size: 10 Stack's top element: 10 Stack pop: 10 Stack's new size: 9
+Printing the entire stack...
+9 8 7 6 5 4 3 2 1 
+pop() 3 times...
+Printing the entire stack...
+6 5 4 3 2 1 
+
++ + +
+
+- - - Queue - - - Initialized new Queue<Integer> queue1 - - -
+
+ basic enqueue(1) and isEmpty()  
+
+The queue's empty? true
+Enqueueing 1 to the queue...
+Is it empty? false
+
+ enqueueing multiple items, then taking a look at the queue 
+
+enqueue(i) 10 times via for loop...
+The entire queue now...
+1 2 3 4 5 6 7 8 9 10 queue's size: 10 queue's top element: 1 queue dequeue: 1 queue's new size: 9
+The entire queue now...
+2 3 4 5 6 7 8 9 10 
+remove(7) true
+The entire queue now...
+2 3 4 5 6 8 9 10 
+Queue's size is 8
+
+
++ + +
+
+- - - Queue - - - Initialized new Queue<String> queue2 - - -
+
+ basic enqueue(hello) and isEmpty()  
+
+Enqueueing hello to the queue...
+The queue's empty? false
+The entire queue now...
+hello 
+Queue's size is 1
+
+ enqueue(hi number i) a million times from 1 to 1000000 
+
+Queue's size is 1000000
+The first element is: hi number 1
+The queue contains: hi number 706000? true
+The queue contains: hi number 1000001? false
+remove(hi number 502382)...
+does the queue contain: hi number 502382? false
++ + +
+
+- - - LinearList - - - Initialized new LinearList<Integer> list1 - - -
+ testing removal of an empty list want null (it doesn't say to throw) 
+null
+null
+null
+
+ testing removal of an empty stack want false twice (it doesn't say to throw) 
+null
+false
+false
