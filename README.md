@@ -1,5 +1,6 @@
 # dataStructures
-Collection of various data structures for CS 310
+Collection of course projects implementing and utilizing various data structures
+
 
 p1 - 
 Circular array-based singly linked list
